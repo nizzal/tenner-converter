@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+.navbar{
+    width: 100%;
+    background-color: #8375D6;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.logo h3 {
+    padding: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 10px;
+    display: block;
+}
+
+nav a:hover {
+    color:green;
+}
+
+nav li:active {
+    color: green;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color:rgba(255, 255, 255, 0.5);
+    
+}
+
+/* Container */
+.container {
+    /* background-color: orange; */
+    max-width: 1080px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Intro,Title,Description */
+.intro {
+    width: 50%;
+    margin-right: 10px;
+    color: white;
+}
+.title {
+    margin: 0 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.main-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.title .slogan {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.title p {
+    margin-top: 20px;
+    width: 70%;
+}
+
+/* Main Content */
+.main-content {
+    /* height: 50vh; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8375D6;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.main-content h2 {
+    text-align: center;
+    color: white;
+
+}
+
+/* Form */
+#f-from,
+#f-to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 0 0 6px 0;
+    box-shadow: 6px 6px 4px 0px #000000cb;
+}
+
+#f-from input,
+#f-to input {
+    height: 2.6em;
+    width: 100%;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    border-right: 1px #E4EBF5 solid;
+    color: #135D80;
+}
+
+input::placeholder {
+    color: #135D80;
+}
+
+input[type="number"]
+{
+    font-size:24px;
+    padding: 10px;
+}
+
+#f-from select,
+#f-to select{
+    height: 2.6em;
+    width: 80px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius:  0 6px 6px 0;
+    border-left: 1px #E4EBF5 solid;
+    /* margin-left: 4px; */
+    color: #135D80;
+}
+
+@media (max-width:480px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro,
+    .main-content {
+        width: 90%;
+        margin: 20px 0;
+    }
+    
+}
+
+.another {
+    height: 100vh;
+    background-color: purple;
+}
