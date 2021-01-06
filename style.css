@@ -29,50 +29,20 @@ main {
 nav{
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1080px;
     margin: auto;
+    padding: 10px;
 }
 
 .logo h3 {
     padding: 0 10px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
 
-nav li {
-    padding: 0 10px;
-    display: block;
-}
 
-nav a:hover {
-    color:green;
-}
-
-nav li:active {
-    color: green;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0 20px;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color:rgba(255, 255, 255, 0.5);
-    
-}
 
 /* Container */
 .container {
